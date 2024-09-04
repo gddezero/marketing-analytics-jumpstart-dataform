@@ -1,0 +1,13 @@
+dataformCoreVersion: 3.0.2
+defaultProject: forrest-test-project-333203
+defaultDataset: marketing
+defaultAssertionDataset: marketing_assertions
+defaultLocation: US
+vars:
+  env: dev
+  ga4_export_project: bigquery-public-data
+  ga4_export_dataset: ga4_obfuscated_sample_ecommerce
+  ga4_export_table_suffix: "_*"
+  ga4_incremental_processing_days_back: "3"
+  ads_export_data: "[{\"project\": \"PROJECT_ID\",\"dataset\": \"DATASET_NAME\", \"table_suffix\": \"_123456\"},{\"project\": \"PROJECT_ID\",\"dataset\": \"DATASET_NAME\",\"table_suffix\": \"_34567890\"}]"
+  ads_metrics_lookback_days: "365"

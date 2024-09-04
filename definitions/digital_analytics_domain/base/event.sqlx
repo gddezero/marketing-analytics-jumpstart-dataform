@@ -36,13 +36,13 @@ config {
   tags: ['ga4']
   }
 
-pre_operations {
-  -- NOTE: this only adds the missing column, to poplulate the field value execute the backfill script backfill/collected_traffic_source_backfill.sqlx
-  ${when(incremental(), `ALTER TABLE ${self()}
-  ADD COLUMN IF NOT EXISTS collected_traffic_source_id STRING`,
-  'SELECT "ignore_it"')
-    }
-}
+-- pre_operations {
+--   -- NOTE: this only adds the missing column, to poplulate the field value execute the backfill script backfill/collected_traffic_source_backfill.sqlx
+--   ${when(incremental(), `ALTER TABLE ${self()}
+--   ADD COLUMN IF NOT EXISTS collected_traffic_source_id STRING`,
+--   'SELECT "ignore_it"')
+--     }
+-- }
   SELECT
     GENERATE_UUID() as event_id,
     CASE 
