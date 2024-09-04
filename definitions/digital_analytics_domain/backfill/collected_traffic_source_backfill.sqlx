@@ -16,6 +16,7 @@
 
 config {
     type: "operations",
+    tags: ['ga4_collected']
 }
 
 UPDATE

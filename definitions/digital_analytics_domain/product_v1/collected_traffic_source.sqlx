@@ -16,7 +16,7 @@
 config {  
   type: "view",
   schema: functions.productSchema("ga4"),
-  tags: ['ga4']
+  tags: ['ga4_collected']
 }
 
 SELECT * EXCEPT(created_ts)
