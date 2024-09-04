@@ -21,7 +21,7 @@ config {
   bigquery: {
     clusterBy: ["collected_traffic_source_id"]
   },
-  tags: ['ga4']
+  tags: ['ga4_collected']
   }
 
 WITH source AS
